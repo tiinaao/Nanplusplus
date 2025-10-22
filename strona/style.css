@@ -205,7 +205,6 @@ body {
     background: linear-gradient(160deg, #dad7db 65%, rgb(177, 175, 175) 100%);
     order: 2;
   }
-}
 
 .content.fade-out {
   opacity: 0;
