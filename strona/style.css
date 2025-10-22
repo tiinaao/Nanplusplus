@@ -156,10 +156,32 @@ body {
 }
 
 @media (max-width: 700px) {
+  .content {
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  .content.fade-out {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  .content.fade-in {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+
+  .container {
+    flex-direction: column;
+  }
+
   .sidebar {
     width: 100%;
     clip-path: none;
     padding: 1.5rem;
+    z-index: 3;
+    position: relative;
   }
 
   .burger {
@@ -169,21 +191,20 @@ body {
   .menu {
     max-height: 0;
     overflow: hidden;
+    transition: max-height 0.3s ease;
   }
 
   .menu.open {
     max-height: 500px;
   }
-}
 
-.content {
-  flex: 1;
-  background: linear-gradient(160deg, #dad7db 65%, rgb(177, 175, 175) 100%);
-  padding: 2rem;
-  font-size: 1.2rem;
-  opacity: 1;
-  transform: translateX(10px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  .content {
+    width: 100%;
+    transform: none;
+    padding: 1.5rem;
+    background: linear-gradient(160deg, #dad7db 65%, rgb(177, 175, 175) 100%);
+    order: 2;
+  }
 }
 
 .content.fade-out {
