@@ -5,14 +5,18 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* BODY */
 body {
   background-color: #8c8c8c;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
+/* MAIN CONTAINER */
 .container {
   display: flex;
   flex: 1;
@@ -20,6 +24,7 @@ body {
   overflow: hidden;
 }
 
+/* SIDEBAR */
 .sidebar {
   background: linear-gradient(160deg, #111 70%, #686868 100%);
   width: 340px; 
@@ -34,6 +39,7 @@ body {
   flex-shrink: 0;
 }
 
+/* LOGO */
 .logo {
   font-size: 2rem;
   font-weight: bold;
@@ -82,6 +88,7 @@ body {
   opacity: 1;
 }
 
+/* MENU */
 .menu {
   list-style: none;
   display: flex;
@@ -113,13 +120,28 @@ body {
   transform: translateX(6px);
 }
 
+/* CONTENT AREA */
 .content {
   flex: 1;
   background: linear-gradient(160deg, #dad7db 65%, rgb(177, 175, 175) 100%);
   padding: 2rem;
   font-size: 1.2rem;
+  opacity: 1;
+  transform: translateX(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
+.content.fade-out {
+  opacity: 0;
+  transform: translateX(0);
+}
+
+.content.fade-in {
+  opacity: 1;
+  transform: translateX(10px);
+}
+
+/* BURGER MENU */
 .burger {
   display: none;
   flex-direction: column;
@@ -148,6 +170,7 @@ body {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* RESPONSIVE: TABLET */
 @media (max-width: 900px) {
   .sidebar {
     width: 280px;
@@ -155,25 +178,16 @@ body {
   }
 }
 
+/* RESPONSIVE: MOBILE FIX */
 @media (max-width: 700px) {
-  .content {
-    transform: translateY(10px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
   }
-
-  .content.fade-out {
-    opacity: 0;
-    transform: translateY(0);
-  }
-
-  .content.fade-in {
-    opacity: 1;
-    transform: translateY(10px);
-  }
-}
 
   .container {
     flex-direction: column;
+    overflow: visible; /* allow page to scroll */
   }
 
   .sidebar {
@@ -200,22 +214,26 @@ body {
 
   .content {
     width: 100%;
-    transform: none;
+    transform: translateY(10px); /* slide from top instead of right */
     padding: 1.5rem;
     background: linear-gradient(160deg, #dad7db 65%, rgb(177, 175, 175) 100%);
     order: 2;
+    flex: none; /* allow natural growth */
+    transition: opacity 0.4s ease, transform 0.4s ease;
   }
 
-.content.fade-out {
-  opacity: 0;
-  transform: translateX(0);
+  .content.fade-out {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  .content.fade-in {
+    opacity: 1;
+    transform: translateY(10px);
+  }
 }
 
-.content.fade-in {
-  opacity: 1;
-  transform: translateX(10px);
-}
-
+/* TEXT + ELEMENTS */
 p {
   font-size: 15px;
   text-align: justify;
@@ -223,23 +241,24 @@ p {
 }
 
 hr {
-    height: 6px;
-    background: linear-gradient(90deg, 
-        #FF45C7, #FF6BC7, #45DDFF, #67E3FF, #FF45C7);
-    background-size: 300% 100%;
-    animation: waveMove 4s ease-in-out infinite;
-    margin: 10px 0;
-    max-width: 90%;
-    border: none;
-    border-radius: 3px;
+  height: 6px;
+  background: linear-gradient(90deg, 
+      #FF45C7, #FF6BC7, #45DDFF, #67E3FF, #FF45C7);
+  background-size: 300% 100%;
+  animation: waveMove 4s ease-in-out infinite;
+  margin: 10px 0;
+  max-width: 90%;
+  border: none;
+  border-radius: 3px;
 }
 
 @keyframes waveMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
+/* GALLERY */
 .gallery {
   margin-top: 1.5rem;
   display: grid;
@@ -263,10 +282,11 @@ hr {
   box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.35);
 }
 
+/* PROJECTS */
 .projects {
   margin-top: 1.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   justify-items: center;
 }
@@ -282,6 +302,7 @@ hr {
 
 .project img {
   width: 100%;
+  max-width: 250px;
   height: auto;
   display: block;
   transition: transform 0.4s ease;
