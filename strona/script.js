@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
                  <div class="project" onclick="window.open('project3.html', '_blank')">
                  <img src="placeholder.png" alt="Project 3">
                  <div class="overlay"><span>Projekt 3</span></div></div></div>`,
-    aktualnosci: `<h1>AKTUALNOSCI</h1><hr><section class="updates">
+    aktualnosci: `<h1>AKTUALNOŚCI</h1><hr><section class="updates">
                     <div class="update-list">
                     <div class="update">
                     <div class="update-header">
@@ -85,31 +85,27 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function initializeUpdates() {
-    document.querySelectorAll('.update-header').forEach(header => {
-      header.removeEventListener('click', handleUpdateClick);
-      header.removeEventListener('touchend', handleUpdateTouch);
-      
-      header.addEventListener('click', handleUpdateClick);
-      header.addEventListener('touchend', handleUpdateTouch, { passive: true });
-    });
-  }
+  document.querySelectorAll('.update-header').forEach(header => {
+    // Remove all existing event listeners
+    header.replaceWith(header.cloneNode(true));
+  });
+
+  // Re-attach only click events
+  document.querySelectorAll('.update-header').forEach(header => {
+    header.addEventListener('click', handleUpdateClick);
+  });
+}
 
   function handleUpdateClick(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    toggleUpdate(e.currentTarget);
-  }
-
-  function handleUpdateTouch(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    toggleUpdate(e.currentTarget);
-  }
+  e.preventDefault();
+  e.stopPropagation();
+  toggleUpdate(e.currentTarget);
+}
 
   function toggleUpdate(header) {
-    const update = header.parentElement;
-    update.classList.toggle('open');
-  }
+  const update = header.parentElement;
+  update.classList.toggle('open');
+}
 
   function changeContent(newContent) {
     console.log('Changing content to:', newContent.substring(0, 50) + '...');
