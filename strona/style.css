@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -123,6 +123,27 @@ body {
   opacity: 1;
   transform: translateX(10px);
   transition: opacity 0.4s ease, transform 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-symbol {
+  position: absolute;
+  opacity: 0;
+  animation: symbolPulse 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes symbolPulse {
+  0%, 100% { 
+    opacity: 0; 
+    transform: scale(0.7);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(0.9);
+  }
 }
 
 .content.fade-out {
@@ -228,32 +249,47 @@ p {
   font-size: 15px;
   text-align: justify;
   max-width: 90%;
+  padding: 5px;
 }
 
 h2 {
-  background: linear-gradient(90deg, 
-      #FF45C7, #FF6BC7, #45DDFF, #67E3FF, #FF45C7);
-  background-size: 100%;
-  animation: waveMove 4s ease-in-out infinite;
-  background-clip: text;
-  color: transparent;
+  color: #111111;
   font-size: 300%;
   margin: 15%;
-  margin-bottom: 5%;
-  text-align: justify;
+  text-align: center;
+  margin-top: 35%;
+  position: relative;
+  z-index: 1;
+  animation: subtleBounce 8s ease-in-out infinite;
 }
 
-
-@keyframes waveMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes subtleBounce {
+  0%, 85%, 100% {
+    transform: translateY(0);
+  }
+  87% {
+    transform: translateY(-8px);
+  }
+  89% {
+    transform: translateY(-4px);
+  }
+  91% {
+    transform: translateY(-2px);
+  }
+  93% {
+    transform: translateY(-1px);
+  }
+  95% {
+    transform: translateY(2px);
+  }
+  97% {
+    transform: translateY(1px);
+  }
 }
 
 hr {
   height: 6px;
-  background: linear-gradient(90deg, 
-      #FF45C7, #FF6BC7, #45DDFF, #67E3FF, #FF45C7);
+  background: linear-gradient(90deg, #FF45C7, #FF6BC7, #45DDFF, #67E3FF, #FF45C7);
   background-size: 300% 100%;
   animation: waveMove 4s ease-in-out infinite;
   margin: 10px 0;
@@ -300,7 +336,7 @@ hr {
 .project .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 128, 255, 0.8);
+  background: #111111;
   color: white;
   font-size: 1.3rem;
   font-weight: bold;
@@ -322,7 +358,7 @@ hr {
 }
 
 .updates {
-  margin-top: 2rem;
+  margin-top: 1rem;
   max-width: 90%;
 }
 
@@ -347,11 +383,14 @@ hr {
   padding: 1rem 1.2rem;
   cursor: pointer;
   font-weight: 600;
-  background: #222;
+  background: #111111;
   color: #dad7db;
   position: relative;
   user-select: none;
-  z-index: 2;
+}
+
+.update-date {
+  color: #858585; 
 }
 
 .update-header .arrow {
@@ -361,29 +400,33 @@ hr {
 }
 
 .update-content {
-  display: none;
+  max-height: 0;
   overflow: hidden;
-  padding: 1rem 1.2rem;
+  padding: 0 1.2rem;
   background: #e3e3e3;
-  color: #333;
-  animation: fadeSlideDown 0.3s ease forwards;
+  color: #111111;
+  transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
 .update.open .update-content {
-  display: block;
+  max-height: 500px; 
+  padding: 1rem 1.2rem;
+}
+
+.update-header .arrow {
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
 }
 
 .update.open .arrow {
   transform: rotate(180deg);
 }
 
-@keyframes fadeSlideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.update {
+  background: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.15);
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
