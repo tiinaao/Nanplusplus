@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.getElementById("menu");
 
   const pages = {
-    welcome: `<h1>Witamy na stronie koła NaN++</h1><hr><p>To jest ekran powitalny. Wybierz interesującą ciebie opcję z menu!</p>`,
+    welcome: `<h2>Witamy na stronie<br> koła NaN++</h2>`,
     info: `<h1>INFO</h1><hr><p>Hej! Szukasz miejsca, gdzie Twoja pasja do technologii spotka się z ambitnymi projektami i świetną atmosferą? Trafiłeś idealnie!
             <br><br>Jesteśmy Kołem Naukowym NaN++ (Not a Number++), zrzeszającym studentów Uniwersytetu Gdańskiego, dla których informatyka i nowoczesne technologie to coś więcej niż tylko kierunek studiów. To grupa zapaleńców, którzy nie boją się wyzwań i chcą razem tworzyć.
             <br><br>Wymyślamy i realizujemy różne projekty, eksperymentujemy z nowymi technologiami, dzielimy się wiedzą i razem rozwijamy nasze umiejętności.
@@ -34,13 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
                  <div class="project" onclick="window.open('project3.html', '_blank')">
                  <img src="placeholder.png" alt="Project 3">
                  <div class="overlay"><span>Projekt 3</span></div></div></div>`,
-    galeria: `<h1>GALERIA</h1><hr>  <div class="gallery">
-              <img src="placeholder.png" alt="placeholder image 1">
-              <img src="placeholder.png" alt="placeholder image 2">
-              <img src="placeholder.png" alt="placeholder image 3">
-              <img src="placeholder.png" alt="placeholder image 4">
-              <img src="placeholder.png" alt="placeholder image 5">
-              <img src="placeholder.png" alt="placeholder image 6"></div>`,
+    aktualnosci: `<h1>AKTUALNOSCI</h1><hr><p><section class="updates">
+                    <div class="update-list">
+                    <div class="update">
+                    <div class="update-header">
+                     <span class="update-title">Dodano nową sekcję projektów</span>
+                        <span class="update-date">2025-10-22</span>
+                         <span class="arrow">▼</span></div>
+                     <div class="update-content">
+                      <p>Wprowadzono nową sekcję projektów z efektami hover oraz lepszymi animacjami.</p>
+                      </div></div></section></p>`,
     kontakt: `<h1>KONTAKT</h1><hr><p>Dołącz do nas!
               <br><br>Masz pytania? Chcesz się przywitać? A może od razu chcesz dołączyć? Śmiało, napisz do nas! Jesteśmy tu:
               <br><br>E-mail: n4nplusplus@gmail.com
@@ -48,19 +51,33 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   function changeContent(newContent) {
-    content.classList.add("fade-out");
+  content.classList.add("fade-out");
+
+  setTimeout(() => {
+    content.innerHTML = newContent;
+    content.classList.remove("fade-out");
+    content.classList.add("fade-in");
+    
+    if (newContent.includes("update-header")) {
+      requestAnimationFrame(() => {
+        document.querySelectorAll('.update-header').forEach(header => {
+          const toggleUpdate = (e) => {
+            e.stopPropagation();
+            const update = header.parentElement;
+            update.classList.toggle('open');
+          };
+          header.addEventListener('click', toggleUpdate);
+          header.addEventListener('touchend', toggleUpdate, { passive: true });
+        });
+      });
+    }
 
     setTimeout(() => {
-      content.innerHTML = newContent;
-      content.classList.remove("fade-out");
-      content.classList.add("fade-in");
-
-      setTimeout(() => {
-        content.classList.remove("fade-in");
-      }, 400);
-    }, 300);
-  }
-
+      content.classList.remove("fade-in");
+    }, 400);
+  }, 300);
+}
+  
   changeContent(pages.welcome);
 
   menuButtons.forEach(button => {
