@@ -47,7 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
     kontakt: `<h1>KONTAKT</h1><hr><p>Dołącz do nas!
               <br><br>Masz pytania? Chcesz się przywitać? A może od razu chcesz dołączyć? Śmiało, napisz do nas! Jesteśmy tu:
               <br><br><strong>E-mail:</strong> n4nplusplus@gmail.com
-              <br><br><strong>Discord:</strong> https://discord.gg/8DQ9P497</p>`
+              <br><br><strong>Discord:</strong> https://discord.gg/8DQ9P497
+              <br><br>© 2025 Koło Naukowe NaN++</p>`
   };
 
   function createContentSymbols() {
@@ -81,7 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
       
       content.appendChild(symbol);
     }
-    console.log('Symbols created!');
   }
 
   function initializeUpdates() {
@@ -108,7 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 
   function changeContent(newContent) {
-    console.log('Changing content to:', newContent.substring(0, 50) + '...');
     content.classList.add("fade-out");
 
     setTimeout(() => {
@@ -131,7 +130,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 300);
   }
   
-  console.log('Initial page load');
   changeContent(pages.welcome);
 
   menuButtons.forEach(button => {
