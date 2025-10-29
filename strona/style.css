@@ -430,3 +430,25 @@ hr {
   overflow: hidden;
   transition: all 0.3s ease;
 }
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+
+.info img {
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+}
+
+.info img:hover {
+    transform: scale(1.2);
+}

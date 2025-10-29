@@ -24,31 +24,27 @@ document.addEventListener("DOMContentLoaded", () => {
             <br><br>Pozdrawiamy,
             <br>Ekipa NaN++ ;]</p>`,
     projekty:  `<h1>PROJEKTY</h1><hr>
-                <div class="projects">
+                <p>Wkrótce ;)</p>
+                <!--<div class="projects">
                 <div class="project" onclick="window.open('project1.html', '_blank')">
                 <img src="placeholder.png" alt="Project 1">
-                <div class="overlay"><span>Projekt 1</span></div></div>
-                <div class="project" onclick="window.open('project2.html', '_blank')">
-                <img src="placeholder.png" alt="Project 2">
-                 <div class="overlay"><span>Projekt 2</span></div></div>
-                 <div class="project" onclick="window.open('project3.html', '_blank')">
-                 <img src="placeholder.png" alt="Project 3">
-                 <div class="overlay"><span>Projekt 3</span></div></div></div>`,
+                <div class="overlay"><span>Projekt 1</span></div></div>-->`,
     aktualnosci: `<h1>AKTUALNOŚCI</h1><hr><section class="updates">
                     <div class="update-list">
                     <div class="update">
                     <div class="update-header">
                      <span class="update-title">Spotkanie organizacyjne</span>
-                        <span class="update-date">2025-10-22</span>
+                        <span class="update-date">2025-10-29</span>
                         <span class="arrow">▼</span></div>
                      <div class="update-content">
-                      <p>Kiedy: Nan <br> Gdzie: Nan</p>
+                      <p>Serdecznie zapraszamy na spotkanie organizacyjne odrestaurowanego koła Nan++ :]<br><br>Kiedy: 12.11.2025 <br> Gdzie: Nan</p>
                       </div></div></section>`,
     kontakt: `<h1>KONTAKT</h1><hr><p>Dołącz do nas!
-              <br><br>Masz pytania? Chcesz się przywitać? A może od razu chcesz dołączyć? Śmiało, napisz do nas! Jesteśmy tu:
-              <br><br><strong>E-mail:</strong> n4nplusplus@gmail.com
-              <br><br><strong>Discord:</strong> https://discord.gg/8DQ9P497
-              <br><br>© 2025 Koło Naukowe NaN++</p>`
+              <br><br>Masz pytania? Chcesz się przywitać? A może od razu chcesz dołączyć? Śmiało, napisz do nas! Jesteśmy tu:</p>
+              <br><div class="info"><p><strong>E-mail:</strong><a href="mailto:n4nplusplus@gmail.com" target="_blank"><img src="icons/email.png" width="5%" height="5%"></a></p></div>
+              <div class="info"><p><strong>Discord:</strong><a href="https://discord.gg/Vk3N6xtBrq" target="_blank"><img src="icons/discord.png" width="5%" height="5%"></a></p></div>
+              <div class="info"><p><strong>Instagram:</strong><a href="https://www.instagram.com/nanplusplus/" target="_blank"><img src="icons/instagram.png" width="5%" height="5%"></a></p></div>
+              <br><p>© 2025 Koło Naukowe NaN++</p>`
   };
 
   function createContentSymbols() {
