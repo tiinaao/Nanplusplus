@@ -14,14 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const pages = {
     welcome: `<h2>Witamy na stronie<br> koła NaN</h2>`,
-    info: `<h1>INFO</h1><hr><p>Hej! Szukasz miejsca, gdzie pasja do technologii spotyka się z ambitnymi projektami? Trafiłeś idealnie!
+    info: `<h1>INFO</h1><hr><p><strong>Hej! Szukasz miejsca, gdzie pasja do technologii spotyka się z ambitnymi projektami? Trafiłeś idealnie!</strong>
             <br><br>Nan++ (Not a Number++) to koło naukowe dla studentów UG, dla których informatyka to coś więcej niż studiowanie. To grupa zapaleńców, którzy razem tworzą, eksperymentują z technologiami i rozwijają się. Stawiamy na konkretne działania i realne efekty, które wzbogacą Twoje portfolio.
-            <br><br>Wiemy, jak to jest. Myślisz: "brzmi fajnie, ale...". To, że to czytasz i Cię to zainteresowało, nie jest przypadkiem. Nie pozwól, żeby strach lub wątpliwości powstrzymały Ciebie od dołączenia do nas. Nie ważne, jaki jest Twój wydział lub poziom zaawansowania. Nasza ekipa jest przygotowana na osoby z każdym poziomem (no, może oprócz tych, którzy są już od nas lepsi ;).
+            <br><br>Wiemy, jak to jest. Myślisz: "brzmi fajnie, ale...". To, że to czytasz i Cię to zainteresowało, nie jest przypadkiem. Nie pozwól, żeby strach lub wątpliwości powstrzymały Ciebie od dołączenia do nas. Nie ważne, jaki jest Twój wydział lub poziom zaawansowania. Nasza ekipa jest przygotowana na osoby z każdym poziomem (no, może oprócz tych, którzy są już od nas lepsi).
             <br><br>Nie musisz czekać na idealny moment, dołącz do nas teraz! Zawsze znajdziemy sposób, żeby wciągnąć Ciebie w nasze obecne działania.
-            <br><br>Pozdrawiamy,
-            <br>Ekipa NaN++ ;]</p>`,
+            <br><br><strong>Pozdrawiamy,
+            <br>Ekipa NaN++ ;]</strong></p>`,
     projekty:  `<h1>PROJEKTY</h1><hr>
-                <p>Wkrótce ;)</p>
+                <p>Wkrótce ;]</p>
                 <!--<div class="projects">
                 <div class="project" onclick="window.open('project1.html', '_blank')">
                 <img src="placeholder.png" alt="Project 1">
@@ -34,13 +34,14 @@ document.addEventListener("DOMContentLoaded", () => {
                         <span class="update-date">2025-10-29</span>
                         <span class="arrow">▼</span></div>
                      <div class="update-content">
-                      <p>Serdecznie zapraszamy na spotkanie organizacyjne odrestaurowanego koła Nan++ :]<br><br>Kiedy: 12.11.2025 <br> Gdzie: Nan</p>
+                      <p>Serdecznie zapraszamy na spotkanie organizacyjne odrestaurowanego koła Nan++ :]<br><br>Kiedy: 13.11.2025 o 16.15 <br> Gdzie: Nan</p>
                       </div></div></section>`,
     kontakt: `<h1>KONTAKT</h1><hr><p>Dołącz do nas!
               <br><br>Masz pytania? Chcesz się przywitać? A może od razu chcesz dołączyć? Śmiało, napisz do nas! Jesteśmy tu:</p>
               <br><div class="info"><p><strong>E-mail:</strong><a href="mailto:n4nplusplus@gmail.com" target="_blank"><img src="icons/email.png" width="5%" height="5%"></a></p></div>
               <div class="info"><p><strong>Discord:</strong><a href="https://discord.gg/Vk3N6xtBrq" target="_blank"><img src="icons/discord.png" width="5%" height="5%"></a></p></div>
               <div class="info"><p><strong>Instagram:</strong><a href="https://www.instagram.com/nanplusplus/" target="_blank"><img src="icons/instagram.png" width="5%" height="5%"></a></p></div>
+              <div class="info"><p><strong>Stara strona:</strong><a href="https://www.instagram.com/nanplusplus/" target="_blank"><img src="icons/web.png" width="5%" height="5%"></a></p></div>
               <br><p>© 2025 Koło Naukowe NaN++</p>`
   };
 
