@@ -14,11 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const pages = {
     welcome: `<h2>Witamy na stronie<br> koła NaN</h2>`,
-    info: `<h1>INFO</h1><hr><p>Hej! Szukasz miejsca, gdzie Twoja pasja do technologii spotka się z ambitnymi projektami i świetną atmosferą? Trafiłeś idealnie!
-            <br><br>Nan++ (Not a Number++) to koło naukowe, zrzeszające studentów Uniwersytetu Gdańskiego, dla których informatyka to coś więcej niż tylko kierunek studiów. To grupa zapaleńców, którzy nie boją się wyzwań i chcą razem tworzyć.
-            <br><br>Zajmujemy się organizowaniem i realizacją różnych projektów, eksperymentujemy z technologiami, dzielimy się wiedzą i razem rozwijamy nasze umiejętności.Stawiamy na konkretne działania i realne efekty. Działamy po to, aby tworzyć rzeczy, które będą powodem do dumy, którymi możesz się pochwalić i które mogą wzbogacić Twoje portfolio.
-            <br><br>Nie ważne, czy dopiero zaczynasz, czy jesteś już doświadczonym programistą lub grafikiem. Nie ważne, czy jesteś z Wydziału Matematyki, Fizyki i Informatyki, czy zupełnie innego wydziału. Wierzymy, że pasja i chęć do działania są najważniejsze. Nasza ekipa jest przygotowana na osoby z każdym poziomem zaawansowania (no, może oprócz tych, którzy są już lepsi od nas ;).
-            <br><br>Wiemy, jak to jest. Myślisz: "brzmi fajnie, ale...". To, że to czytasz i Cię to zainteresowało, nie jest przypadkiem. Nie pozwól, żeby strach lub wątpliwości powstrzymały Ciebie od dołączenia do nas. Nie musisz od razu być ekspertem, musisz tylko chcieć spróbować. Nie obiecujemy, że będzie łatwo, ale obiecujemy, że będzie warto.
+    info: `<h1>INFO</h1><hr><p>Hej! Szukasz miejsca, gdzie pasja do technologii spotyka się z ambitnymi projektami? Trafiłeś idealnie!
+            <br><br>Nan++ (Not a Number++) to koło naukowe dla studentów UG, dla których informatyka to coś więcej niż studiowanie. To grupa zapaleńców, którzy razem tworzą, eksperymentują z technologiami i rozwijają się. Stawiamy na konkretne działania i realne efekty, które wzbogacą Twoje portfolio.
+            <br><br>Wiemy, jak to jest. Myślisz: "brzmi fajnie, ale...". To, że to czytasz i Cię to zainteresowało, nie jest przypadkiem. Nie pozwól, żeby strach lub wątpliwości powstrzymały Ciebie od dołączenia do nas. Nie ważne, jaki jest Twój wydział lub poziom zaawansowania. Nasza ekipa jest przygotowana na osoby z każdym poziomem (no, może oprócz tych, którzy są już od nas lepsi ;).
             <br><br>Nie musisz czekać na idealny moment, dołącz do nas teraz! Zawsze znajdziemy sposób, żeby wciągnąć Ciebie w nasze obecne działania.
             <br><br>Pozdrawiamy,
             <br>Ekipa NaN++ ;]</p>`,
