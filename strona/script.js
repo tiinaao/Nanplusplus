@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const pages = {
     welcome: `<h2>Witamy na stronie<br> koła NaN</h2>`,
     info: `<h1>INFO</h1><hr><p>Hej! Szukasz miejsca, gdzie Twoja pasja do technologii spotka się z ambitnymi projektami i świetną atmosferą? Trafiłeś idealnie!
-            <br><br>Jesteśmy Kołem Naukowym NaN++ (Not a Number++), zrzeszającym studentów Uniwersytetu Gdańskiego, dla których informatyka i nowoczesne technologie to coś więcej niż tylko kierunek studiów. To grupa zapaleńców, którzy nie boją się wyzwań i chcą razem tworzyć.
-            <br><br>Wymyślamy i realizujemy różne projekty, eksperymentujemy z nowymi technologiami, dzielimy się wiedzą i razem rozwijamy nasze umiejętności.
-            <br><br>U nas nie chodzi tylko o gadanie, u nas się robi! Stawiamy na konkretne działania i realne efekty. Działamy po to, aby tworzyć projekty, które będą powodem do dumy, którymi możesz się pochwalić i które wzbogacą Twoje portfolio oraz CV.
-            <br><br>Nie ważne, czy dopiero zaczynasz, czy jesteś już doświadczonym programistą lub grafikiem. Nie ważne, czy jesteś z Wydziału Matematyki, Fizyki i Informatyki, czy zupełnie innego wydziału. Wierzymy, że pasja i chęć do działania są najważniejsze. Jeśli lubisz to, co robisz i chcesz poznać ludzi z podobną energią to jest to miejsce dla ciebie. Nasza ekipa jest nastawiona na osoby z KAŻDYM poziomem zaawansowania (no, może oprócz tych, którzy są już lepsi od nas ;).
-            <br><br>Wiemy, jak to jest. Myślisz: "brzmi fajnie, ale...". To, że to czytasz i Cię to zainteresowało, nie jest przypadkiem. To jest ten pierwszy, najważniejszy krok. Nie pozwól, żeby strach lub wątpliwości go zmarnowały. Nie musisz od razu być ekspertem. Musisz tylko chcieć spróbować. Zrób ten jeden, mały krok. Nie obiecujemy, że będzie łatwo, ale obiecujemy, że będzie warto.
-            <br><br>Nie musisz czekać na "idealny moment" lub "nowy projekt". Jeśli coś teraz tworzymy, a Ty chcesz dołączyć - NAPISZ! Zawsze znajdziemy sposób, żeby Cię wciągnąć w działanie.
+            <br><br>Nan++ (Not a Number++) to koło naukowe, zrzeszające studentów Uniwersytetu Gdańskiego, dla których informatyka to coś więcej niż tylko kierunek studiów. To grupa zapaleńców, którzy nie boją się wyzwań i chcą razem tworzyć.
+            <br><br>Zajmujemy się organizowaniem i realizacją różnych projektów, eksperymentujemy z technologiami, dzielimy się wiedzą i razem rozwijamy nasze umiejętności.
+            <br><br>Stawiamy na konkretne działania i realne efekty. Działamy po to, aby tworzyć rzeczy, które będą powodem do dumy, którymi możesz się pochwalić i które mogą wzbogacić Twoje portfolio.
+            <br><br>Nie ważne, czy dopiero zaczynasz, czy jesteś już doświadczonym programistą lub grafikiem. Nie ważne, czy jesteś z Wydziału Matematyki, Fizyki i Informatyki, czy zupełnie innego wydziału. Wierzymy, że pasja i chęć do działania są najważniejsze. Nasza ekipa jest przygotowana na osoby z każdym poziomem zaawansowania (no, może oprócz tych, którzy są już lepsi od nas ;).
+            <br><br>Wiemy, jak to jest. Myślisz: "brzmi fajnie, ale...". To, że to czytasz i Cię to zainteresowało, nie jest przypadkiem. Nie pozwól, żeby strach lub wątpliwości powstrzymały Ciebie od dołączenia do nas. Nie musisz od razu być ekspertem, musisz tylko chcieć spróbować. Nie obiecujemy, że będzie łatwo, ale obiecujemy, że będzie warto.
+            <br><br>Nie musisz czekać na idealny moment, dołącz do nas teraz! Zawsze znajdziemy sposób, żeby wciągnąć Ciebie w nasze obecne działania.
             <br><br>Pozdrawiamy,
             <br>Ekipa NaN++ ;]</p>`,
     projekty:  `<h1>PROJEKTY</h1><hr>
