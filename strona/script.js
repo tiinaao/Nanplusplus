@@ -21,8 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <br><br><strong>Pozdrawiamy,
             <br>Ekipa NaN++ ;]</strong></p>`,
     projekty:  `<h1>PROJEKTY</h1><hr>
-                <p>Wkrótce ;]</p>
-                <!--<div class="projects">
+                <div class="project" onclick="window.open('archiwum.html', '_blank')">
+                <div class="overlay"><span>Archiwum</span></div></div>
+                <!--
                 <div class="project" onclick="window.open('project1.html', '_blank')">
                 <img src="placeholder.png" alt="Project 1">
                 <div class="overlay"><span>Projekt 1</span></div></div>-->`,
@@ -42,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="info"><p><strong>Discord:</strong><a href="https://discord.gg/Vk3N6xtBrq" target="_blank"><img src="icons/discord.png" width="5%" height="5%"></a></p></div>
               <div class="info"><p><strong>Instagram:</strong><a href="https://www.instagram.com/nanplusplus/" target="_blank"><img src="icons/instagram.png" width="5%" height="5%"></a></p></div>
               <div class="info"><p><strong>Facebook:</strong><a href="https://www.facebook.com/share/1CnGTb1qGf/" target="_blank"><img src="icons/facebook.png" width="5%" height="5%"></a></p></div>
-              <div class="info"><p><strong>Stara strona:</strong><a href="#" target="_blank"><img src="icons/web.png" width="5%" height="5%"></a></p></div>
               <br><p>© 2025 Koło Naukowe NaN++</p>`
   };
 
