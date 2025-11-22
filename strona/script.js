@@ -18,10 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <br><br>Nan++ (Not a Number++) to koło naukowe dla studentów UG, dla których informatyka to coś więcej niż studiowanie. To grupa zapaleńców, którzy razem tworzą, eksperymentują z technologiami i rozwijają się. Stawiamy na konkretne działania i realne efekty, które wzbogacą Twoje portfolio.
             <br><br>Wiemy, jak to jest. Myślisz: "brzmi fajnie, ale...". To, że to czytasz i Cię to zainteresowało, nie jest przypadkiem. Nie pozwól, żeby strach lub wątpliwości powstrzymały Ciebie od dołączenia do nas. Nie ważne, jaki jest Twój wydział lub poziom zaawansowania. Nasza ekipa jest przygotowana na osoby z każdym poziomem (no, może oprócz tych, którzy są już od nas lepsi).
             <br><br>Nie musisz czekać na idealny moment, dołącz do nas teraz! Zawsze znajdziemy sposób, żeby wciągnąć Ciebie w nasze obecne działania.
-            <br><br><strong>Zajęcia z game dev'u:</strong> Czwartek (20.11) o 16.15.
-            <br><strong>Zajęcia z grafiki 2D:</strong> Wtorek (25.11) o 16.15.
             <br><br><strong>Pozdrawiamy,
-            <br>Ekipa NaN++ ;]</strong></p>`,
+            <br>Ekipa NaN++ ;]</strong></p>
+            <br><div class="info"><p><strong>Spotkania:</strong><a href="https://docs.google.com/spreadsheets/d/1HzyO-qAqWD8QrxT49Up0Naf7iGNkXjta_rYk8IXUQ94/edit?gid=0#gid=0" target="_blank"><img src="icons/excel.png" width="5%" height="5%"></a></p></div>`,
     projekty:  `<h1>PROJEKTY</h1><hr>
                 <div class="project" onclick="window.open('archiwum.html', '_blank')">
                 <div class="overlay"><span>Archiwum</span></div></div>
@@ -45,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="info"><p><strong>Discord:</strong><a href="https://discord.gg/Vk3N6xtBrq" target="_blank"><img src="icons/discord.png" width="5%" height="5%"></a></p></div>
               <div class="info"><p><strong>Instagram:</strong><a href="https://www.instagram.com/nanplusplus/" target="_blank"><img src="icons/instagram.png" width="5%" height="5%"></a></p></div>
               <div class="info"><p><strong>Facebook:</strong><a href="https://www.facebook.com/share/1CnGTb1qGf/" target="_blank"><img src="icons/facebook.png" width="5%" height="5%"></a></p></div>
+              <div class="info"><p><strong>Github:</strong><a href="https://github.com/sparrow0p/NaNPlusPlus/" target="_blank"><img src="icons/github.png" width="5%" height="5%"></a></p></div>
               <br><p>© 2025 Koło Naukowe NaN++</p>`
   };
 
