@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="info"><p><strong>Instagram:</strong><a href="https://www.instagram.com/nanplusplus/" target="_blank"><img src="icons/instagram.png" width="5%" height="5%"></a></p></div>
               <div class="info"><p><strong>Facebook:</strong><a href="https://www.facebook.com/share/1CnGTb1qGf/" target="_blank"><img src="icons/facebook.png" width="5%" height="5%"></a></p></div>
               <div class="info"><p><strong>Github:</strong><a href="https://github.com/sparrow0p/NaNPlusPlus/" target="_blank"><img src="icons/github.png" width="5%" height="5%"></a></p></div>
-              <br><p>© 2025 Koło Naukowe NaN++</p>`
+              <br><p>© 2026 Koło Naukowe NaN++</p>`
   };
 
   function createContentSymbols() {
@@ -83,11 +83,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function initializeUpdates() {
   document.querySelectorAll('.update-header').forEach(header => {
-    // Remove all existing event listeners
     header.replaceWith(header.cloneNode(true));
   });
 
-  // Re-attach only click events
   document.querySelectorAll('.update-header').forEach(header => {
     header.addEventListener('click', handleUpdateClick);
   });
